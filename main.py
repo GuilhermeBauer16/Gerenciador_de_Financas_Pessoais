@@ -8,6 +8,24 @@ tipo = ''
 cursor.execute("SELECT name FROM sqlite_master WHERE type ='table' AND name='geral' ")
 tabela_existe = cursor.fetchone()
 
+def mostrar():
+    cursor.execute("SELECT rowid , valor , mes , ano ,opcao , comentario, tipo FROM geral ORDER BY tipo")
+    functions.cabecalho('Gerenciamento de dados', 40)
+    print(f'{str("N.O"):<5}{"R$":<10}{"Mês":<12}{"Ano":<12}{"Tipo":<12}{"Comentario":<10}{"Status":>25}')
+    print('/=' * 40)
+    for linha in cursor.fetchall():
+        print(f'{str(linha[0]):<5}{linha[1]:<10}{linha[2]:<12}{str(linha[3]):<12}{linha[4]:<12}{linha[5]:<10}{linha[6]:>25}')
+
+
+def filtro():
+    categoria = functions.conversor_numero("Informe a categoria: " , int)
+    cursor.execute("SELECT rowid , valor , mes , ano , comentario , tipo FROM geral WHERE tipo =?" , (categoria,))
+    print(f'{str("N.O"):<5}{"R$":<10}{"Mês":<12}{"Ano":<12}{"Tipo":<12}{"Comentario":<10}{"Status":>25}')
+    print('/=' * 40)
+
+
+    for linha in cursor.fetchall():
+        print(f'{str(linha[0]):<5}{linha[1]:<10}{linha[2]:<12}{str(linha[3]):<12}{linha[4]:<12}{linha[5]:<10}{linha[6]:>25}')
 if not tabela_existe:
 
     cursor.execute("CREATE TABLE geral ('valor' real , 'mes' text , 'ano' integer , 'opcao' text ,'comentario' text , 'tipo' text)")
@@ -43,4 +61,12 @@ while True:
         cursor.execute("INSERT INTO geral VALUES(?,?,?,?,?,?)",(receita, mes, ano ,fonte ,comentario ,tipo))
         banco.commit()
 
+    elif opcao == 3:
+        mostrar()
+
+    elif opcao == 4:
+        filtro()
+
+
+banco.close()
         
