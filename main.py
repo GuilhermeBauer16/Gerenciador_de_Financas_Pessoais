@@ -21,7 +21,7 @@ def filtro():
     categoria = functions.conversor_numero("Informe a categoria: " , int)
     cursor.execute("SELECT rowid , valor , mes , ano , comentario , tipo FROM geral WHERE tipo =?" , (categoria,))
     print(f'{str("N.O"):<5}{"R$":<10}{"Mês":<12}{"Ano":<12}{"Tipo":<12}{"Comentario":<10}{"Status":>25}')
-    print('/=' * 40)
+  
 
 
     for linha in cursor.fetchall():
