@@ -5,12 +5,12 @@ def conversor_numero(msg , tipo = int):
             numero_covertido = tipo(numero)
             break
         except ValueError:
-            print('Por favor imforme um numero!')
+            print('\033[31mPor favor imforme um numero!\033[m')
 
     return numero_covertido
 
 
-def cabecalho(msg, quant= 40):
+def cabecalho(msg, quant= 50):
     quantia = quant * 2
     print('/=' * quant)
     print(f'{msg: ^{quantia}}')
@@ -37,16 +37,16 @@ def receita():
     from time import sleep
     fonte = ''
     while True:
-        cabecalho(f'Tipo de receita', 40)
+        cabecalho(f'Tipo de receita', 50)
         print('''
 [1]Salário
 [2]Freelancer
 [3]Outro 
                 ''')
         sleep(1)
-        print('/=' * 40)
+        print('/=' * 50)
         op_receita = conversor_numero('sua opção: ', int)
-        print('/=' * 40)
+        print('/=' * 50)
         if op_receita == 1:
             fonte ='salario'
             break
@@ -58,7 +58,7 @@ def receita():
             break
 
         else:
-            print('por favor imforme uma opção valida!')
+            print('\033[31mPorfavor selecione uma opcão valida!\033[m')
 
     return fonte
 
@@ -67,7 +67,7 @@ def dispesa():
     from time import sleep
     fonte = ''
     while True:
-        cabecalho(f'Tipo de Dispesa', 40)
+        cabecalho(f'Tipo de Dispesa', 50)
         print('''
 [1]Esenssial 
 [2]Lazer 
@@ -76,9 +76,9 @@ def dispesa():
 [5]Outro 
                 ''')
         sleep(1)
-        print('/=' * 40)
+        print('/=' * 50)
         op_receita = conversor_numero('sua opção: ', int)
-        print('/=' * 40)
+        print('/=' * 50)
         if op_receita == 1:
             fonte ='Esenssial'
             break
@@ -96,7 +96,7 @@ def dispesa():
             break
 
         else:
-            print('por favor imforme uma opção valida!')
+            print('\033[31mPorfavor selecione uma opcão valida!\033[m')
 
     return fonte
 
