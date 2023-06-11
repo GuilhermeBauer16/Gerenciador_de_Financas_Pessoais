@@ -1,4 +1,11 @@
 # Gerenciador_de_Financas_Pessoais
+
+## Objetivo 
+
+Este projeto tem como objetivo gerenciar as suas finanças pessoais,
+para que você tenha mais controle dos seus gastos e receitas, 
+podendo assim se organizar melhor para realizar suas metas.
+
 ## Necessário para a funcionalidade do projeto
 
 Para o funcionamento do projeto, você precisará instalar a biblioteca sqlite3 através do pip.
