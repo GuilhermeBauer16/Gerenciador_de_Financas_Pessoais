@@ -24,7 +24,17 @@ https://github.com/GuilhermeBauer16/Gerenciador_de_Financas_Pessoais/assets/1237
     * Mês: Local detinado a inserir o mês por extenso que desejar.
     * Ano :Local detinado a inserir o ano que desejar.
     * comentario: Espaço onde você podera inserir um curto comentario relacionado a dispesa ou ganho.
+   
+ * Funcionalidade de deletar, com esta funcionalidade você tem a possibilidade de remover o que desejar 
 
+ * Funcionalidade de editar,  com esta funcionalidade você tem a possibilidade de modificar o que desejar.
+
+ * Funcionalidade para filtrar suas finanças dividida entre:
+ 
+    * Ano e mês : Neste estilo de filtro você mais preciso pois você selecionará o ano e o mês que desejar.
+
+    * Ano : Estilo de filtro mais simple onde você selecionará apenas o ano.
+    
 ## Necessário para a funcionalidade do projeto
 
 Para o funcionamento do projeto, você precisará instalar a biblioteca sqlite3 através do pip.
