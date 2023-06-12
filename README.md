@@ -12,6 +12,12 @@ podendo assim se organizar melhor para realizar suas metas.
 
 https://github.com/GuilhermeBauer16/Gerenciador_de_Financas_Pessoais/assets/123701893/a66a0d46-c2c2-4502-ab3f-bd0ba44b669a
 
+## Funcionalidades
+
+* A posibilidade da insersão do tipo receita que sera dividido entre:
+   * Ganho: nela você ira inserir seus ganhos.
+   * dispesas: nesta área ira inserir suas dispesas
+
 ## Necessário para a funcionalidade do projeto
 
 Para o funcionamento do projeto, você precisará instalar a biblioteca sqlite3 através do pip.
