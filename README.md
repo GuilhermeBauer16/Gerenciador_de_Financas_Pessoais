@@ -10,6 +10,8 @@ podendo assim se organizar melhor para realizar suas metas.
 
 ![image](https://github.com/GuilhermeBauer16/Gerenciador_de_Financas_Pessoais/assets/123701893/8c864c0c-2a0c-47d7-a337-955fea66ab6f)
 
+<br>
+
 https://github.com/GuilhermeBauer16/Gerenciador_de_Financas_Pessoais/assets/123701893/a66a0d46-c2c2-4502-ab3f-bd0ba44b669a
 
 ## Funcionalidades
