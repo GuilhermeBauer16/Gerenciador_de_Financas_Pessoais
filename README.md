@@ -16,7 +16,14 @@ https://github.com/GuilhermeBauer16/Gerenciador_de_Financas_Pessoais/assets/1237
 
 * A posibilidade da insersão do tipo receita que sera dividido entre:
    * Ganho: nela você ira inserir seus ganhos.
-   * dispesas: nesta área ira inserir suas dispesas
+   
+   * dispesas: nesta área ira inserir suas dispesas.
+  
+ * Dentro dos ganhos e depesas hávera outras divisoes:
+    * Quantia: Local onde podera inserir a quantia em R$.
+    * Mês: Local detinado a inserir o mês por extenso que desejar.
+    * Ano :Local detinado a inserir o ano que desejar.
+    * comentario: Espaço onde você podera inserir um curto comentario relacionado a dispesa ou ganho.
 
 ## Necessário para a funcionalidade do projeto
 
