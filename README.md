@@ -33,9 +33,9 @@ https://github.com/GuilhermeBauer16/Gerenciador_de_Financas_Pessoais/assets/1237
 
  * Funcionalidade para filtrar suas finanças dividida entre:
  
-    * Ano e mês : Neste estilo de filtro você mais preciso pois você selecionará o ano e o mês que desejar.
+    * Ano e mês : Neste estilo de filtro é mais preciso pois você selecionará o ano e o mês que desejar.
 
-    * Ano : Estilo de filtro mais simple onde você selecionará apenas o ano.
+    * Ano : Estilo de filtro mais simples onde você selecionará apenas o ano.
     
 ## Necessário para a funcionalidade do projeto
 
